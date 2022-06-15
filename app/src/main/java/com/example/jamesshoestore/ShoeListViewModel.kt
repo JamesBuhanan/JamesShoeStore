@@ -1,15 +1,20 @@
 package com.example.jamesshoestore
 
 import android.util.Log
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.jamesshoestore.model.Shoe
 
 class ShoeListViewModel : ViewModel() {
-    var count: Int = 0
-    //private val saveButton = MutableLiveData<Shoe>()
-    val shoes = mutableListOf<Shoe>(
+    private val _shoes : MutableList<Shoe> = mutableListOf()
+    val shoes : LiveData<MutableList<Shoe>>
+        get() = MutableLiveData(_shoes)
 
-    )
+    fun addShoe(shoe: Shoe) {
+        _shoes.add(shoe)
+    }
+
     init {
         Log.i("ShoeListViewModel","ShoeListViewModel created!")
     }

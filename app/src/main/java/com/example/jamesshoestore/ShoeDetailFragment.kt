@@ -13,13 +13,13 @@ import timber.log.Timber
 
 class ShoeDetailFragment : Fragment() {
 
+    private val viewModel: ShoeListViewModel by activityViewModels()
     lateinit var binding: FragmentShoeDetailBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         //How to use FragmentShoeDetailBinding
         binding = FragmentShoeDetailBinding.inflate(inflater)
         // Inflate the layout for this fragment
@@ -28,11 +28,6 @@ class ShoeDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val viewModel: ShoeListViewModel by activityViewModels()
-        viewModel.count++
-        Timber.e("HERE DETAIL: ${viewModel.count}")
-        //This code here causes a crash once the FAB on ShoeList is pressed.
 
         binding.cancelButton.setOnClickListener {
             findNavController().navigate(ShoeDetailFragmentDirections.actionFifthFragmentToFourthFragment())
@@ -47,7 +42,7 @@ class ShoeDetailFragment : Fragment() {
             )
 
             // Add Shoe to viewModel.shoes
-            viewModel.shoes.add(shoe)
+            viewModel.addShoe(shoe)
             findNavController().navigate(ShoeDetailFragmentDirections.actionFifthFragmentToFourthFragment())
         }
     }
