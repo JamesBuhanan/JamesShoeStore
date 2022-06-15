@@ -11,7 +11,6 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.jamesshoestore.databinding.FragmentShoeListBinding
-import timber.log.Timber
 
 /**
  * A simple [Fragment] subclass.
