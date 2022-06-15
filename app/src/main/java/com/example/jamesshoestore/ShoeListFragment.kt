@@ -43,6 +43,7 @@ class ShoeListFragment : Fragment() {
             it.forEach {
                 val textView = TextView(context)
                 textView.text = it.name
+                textView.textSize = 34f
                 binding.shoeList.addView(textView)
             }
         })
