@@ -8,47 +8,56 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.jamesshoestore.FirstFragment"
-        android:label="@string/first_fragment_label"
+        android:label="Login"
         tools:layout="@layout/fragment_first">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/SecondFragment"
+            app:popUpTo="@id/FourthFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.jamesshoestore.SecondFragment"
-        android:label="@string/second_fragment_label"
+        android:label="Welcome Onboarding"
         tools:layout="@layout/fragment_second">
         <action
             android:id="@+id/action_SecondFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment" />
+            app:destination="@id/ThirdFragment"
+            app:popUpTo="@id/FourthFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/ThirdFragment"
         android:name="com.example.jamesshoestore.ThirdFragment"
-        android:label="fragment_third"
-        tools:layout="@layout/fragment_third" >
+        android:label="Instructions Onboarding"
+        tools:layout="@layout/fragment_third">
         <action
             android:id="@+id/action_ThirdFragment_to_FourthFragment"
-            app:destination="@id/FourthFragment" />
+            app:destination="@id/FourthFragment"
+            app:popUpTo="@id/FourthFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/FourthFragment"
         android:name="com.example.jamesshoestore.ShoeListFragment"
-        android:label="fragment_fourth"
-        tools:layout="@layout/fragment_shoe_list" >
+        android:label="Shoes List"
+        tools:layout="@layout/fragment_shoe_list">
         <action
             android:id="@+id/action_FourthFragment_to_FifthFragment"
-            app:destination="@id/FifthFragment" />
+            app:destination="@id/FifthFragment"
+            app:popUpTo="@id/FifthFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/FifthFragment"
         android:name="com.example.jamesshoestore.ShoeDetailFragment"
-        android:label="fragment_fifth"
-        tools:layout="@layout/fragment_shoe_detail" >
+        android:label="Shoe Details"
+        tools:layout="@layout/fragment_shoe_detail">
         <action
             android:id="@+id/action_FifthFragment_to_FourthFragment"
-            app:destination="@id/FourthFragment" />
+            app:destination="@id/FourthFragment"
+            app:popUpTo="@id/FourthFragment" />
     </fragment>
 </navigation>

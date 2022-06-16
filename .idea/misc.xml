@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/James/AndroidStudioProjects/JamesShoeStore/app/src/main/res/layout/activity_main.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/James/AndroidStudioProjects/JamesShoeStore/app/src/main/res/layout/content_main.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/James/AndroidStudioProjects/JamesShoeStore/app/src/main/res/layout/fragment_first.xml" value="0.21354166666666666" />
         <entry key="..\:/Users/James/AndroidStudioProjects/JamesShoeStore/app/src/main/res/layout/fragment_fourth.xml" value="0.21354166666666666" />
         <entry key="..\:/Users/James/AndroidStudioProjects/JamesShoeStore/app/src/main/res/layout/fragment_second.xml" value="0.21354166666666666" />
@@ -18,8 +19,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="SuppressKotlinCodeStyleNotification">
-    <option name="disableForAll" value="true" />
   </component>
 </project>
