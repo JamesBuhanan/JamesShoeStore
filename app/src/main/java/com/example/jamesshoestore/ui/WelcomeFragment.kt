@@ -8,13 +8,13 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.jamesshoestore.R
-import com.example.jamesshoestore.databinding.FragmentSecondBinding
+import com.example.jamesshoestore.databinding.FragmentWelcomeBinding
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class WelcomeFragment : Fragment() {
-    private lateinit var binding: FragmentSecondBinding
+    private lateinit var binding: FragmentWelcomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,10 +22,11 @@ class WelcomeFragment : Fragment() {
     ): View {
         binding = DataBindingUtil.inflate(
             inflater,
-            R.layout.fragment_second,
+            R.layout.fragment_welcome,
             container,
             false,
         )
+
         return binding.root
     }
 

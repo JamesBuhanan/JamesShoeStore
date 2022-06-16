@@ -9,7 +9,7 @@
         android:id="@+id/FirstFragment"
         android:name="com.example.jamesshoestore.ui.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_login">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -19,7 +19,7 @@
         android:id="@+id/SecondFragment"
         android:name="com.example.jamesshoestore.ui.WelcomeFragment"
         android:label="Welcome Onboarding"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_SecondFragment_to_ThirdFragment"
             app:destination="@id/ThirdFragment" />
@@ -28,7 +28,7 @@
         android:id="@+id/ThirdFragment"
         android:name="com.example.jamesshoestore.ui.InstructionFragment"
         android:label="Instructions Onboarding"
-        tools:layout="@layout/fragment_third">
+        tools:layout="@layout/fragment_instruction">
         <action
             android:id="@+id/action_ThirdFragment_to_FourthFragment"
             app:destination="@id/FourthFragment" />

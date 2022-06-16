@@ -8,11 +8,11 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.jamesshoestore.R
-import com.example.jamesshoestore.databinding.FragmentThirdBinding
+import com.example.jamesshoestore.databinding.FragmentInstructionBinding
 
 class InstructionFragment : Fragment() {
 
-    private lateinit var binding: FragmentThirdBinding
+    private lateinit var binding: FragmentInstructionBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,7 +20,7 @@ class InstructionFragment : Fragment() {
     ): View {
         binding = DataBindingUtil.inflate(
             inflater,
-            R.layout.fragment_third,
+            R.layout.fragment_instruction,
             container,
             false,
         )
