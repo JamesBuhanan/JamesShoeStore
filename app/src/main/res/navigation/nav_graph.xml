@@ -13,9 +13,7 @@
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment"
-            app:popUpTo="@id/FourthFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -24,9 +22,7 @@
         tools:layout="@layout/fragment_second">
         <action
             android:id="@+id/action_SecondFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment"
-            app:popUpTo="@id/FourthFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/ThirdFragment" />
     </fragment>
     <fragment
         android:id="@+id/ThirdFragment"
@@ -35,9 +31,7 @@
         tools:layout="@layout/fragment_third">
         <action
             android:id="@+id/action_ThirdFragment_to_FourthFragment"
-            app:destination="@id/FourthFragment"
-            app:popUpTo="@id/FourthFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/FourthFragment" />
     </fragment>
     <fragment
         android:id="@+id/FourthFragment"
@@ -46,9 +40,7 @@
         tools:layout="@layout/fragment_shoe_list">
         <action
             android:id="@+id/action_FourthFragment_to_FifthFragment"
-            app:destination="@id/FifthFragment"
-            app:popUpTo="@id/FifthFragment"
-            app:popUpToInclusive="false" />
+            app:destination="@id/FifthFragment" />
     </fragment>
     <fragment
         android:id="@+id/FifthFragment"
@@ -57,7 +49,6 @@
         tools:layout="@layout/fragment_shoe_detail">
         <action
             android:id="@+id/action_FifthFragment_to_FourthFragment"
-            app:destination="@id/FourthFragment"
-            app:popUpTo="@id/FourthFragment" />
+            app:destination="@id/FourthFragment" />
     </fragment>
 </navigation>
