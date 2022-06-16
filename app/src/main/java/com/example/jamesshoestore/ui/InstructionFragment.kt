@@ -24,15 +24,12 @@ class InstructionFragment : Fragment() {
             container,
             false,
         )
+        binding.instructionFragment = this
 
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.buttonThird.setOnClickListener {
-            findNavController().navigate(InstructionFragmentDirections.actionThirdFragmentToFourthFragment())
-        }
+    fun buttonClicked() {
+        findNavController().navigate(InstructionFragmentDirections.actionThirdFragmentToFourthFragment())
     }
 }

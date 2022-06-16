@@ -29,17 +29,12 @@ class LoginFragment : Fragment() {
             container,
             false,
         )
+        binding.loginFragment = this
 
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        val onClickListener: (View) -> Unit = {
-            findNavController().navigate(LoginFragmentDirections.actionFirstFragmentToSecondFragment())
-        }
-        binding.createAccountButton.setOnClickListener(onClickListener)
-        binding.buttonFirst.setOnClickListener(onClickListener)
+    fun buttonClicked() {
+        findNavController().navigate(LoginFragmentDirections.actionFirstFragmentToSecondFragment())
     }
 }

@@ -36,28 +36,24 @@ class ShoeDetailFragment : Fragment() {
         detailViewModel = ViewModelProvider(this).get(ShoeDetailViewModel::class.java)
         binding.viewModel = detailViewModel
         binding.lifecycleOwner = this
+        binding.shoeDetailFragment = this
         // Inflate the layout for this fragment
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    fun cancelClicked() {
+        findNavController().navigate(ShoeDetailFragmentDirections.actionFifthFragmentToFourthFragment())
+    }
 
-        binding.cancelButton.setOnClickListener {
-            findNavController().navigate(ShoeDetailFragmentDirections.actionFifthFragmentToFourthFragment())
-        }
-        binding.saveButton.setOnClickListener {
-            // Make Shoe from EditTexts
-            val shoe = Shoe(
-                name = detailViewModel.name.value!!,
-                companyName = detailViewModel.companyName.value!!,
-                size = detailViewModel.size.value!!.toInt(),
-                description = detailViewModel.description.value!!,
-            )
+    fun saveClicked() {
+        val shoe = Shoe(
+            name = detailViewModel.name.value!!,
+            companyName = detailViewModel.companyName.value!!,
+            size = detailViewModel.size.value!!.toInt(),
+            description = detailViewModel.description.value!!,
+        )
+        listViewModel.addShoe(shoe)
 
-            // Add Shoe to viewModel.shoes
-            listViewModel.addShoe(shoe)
-            findNavController().navigate(ShoeDetailFragmentDirections.actionFifthFragmentToFourthFragment())
-        }
+        findNavController().navigate(ShoeDetailFragmentDirections.actionFifthFragmentToFourthFragment())
     }
 }

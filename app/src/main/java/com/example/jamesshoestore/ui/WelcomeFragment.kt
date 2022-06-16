@@ -26,15 +26,13 @@ class WelcomeFragment : Fragment() {
             container,
             false,
         )
+        binding.welcomeFragment = this
+
 
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(WelcomeFragmentDirections.actionSecondFragmentToThirdFragment())
-        }
+    fun buttonClicked() {
+        findNavController().navigate(WelcomeFragmentDirections.actionSecondFragmentToThirdFragment())
     }
 }

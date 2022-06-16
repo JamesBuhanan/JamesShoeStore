@@ -1,6 +1,5 @@
 package com.example.jamesshoestore.ui
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -30,16 +29,14 @@ class ShoeListFragment : Fragment() {
             container,
             false,
         )
+        binding.shoeListFragment = this
+
         return binding.root
     }
 
-    @SuppressLint("FragmentLiveDataObserve")
+    //    @SuppressLint("FragmentLiveDataObserve")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.fab.setOnClickListener {
-            findNavController().navigate(ShoeListFragmentDirections.actionFourthFragmentToFifthFragment())
-        }
 
         viewModel.shoes.observe(this, Observer {
             binding.shoeList.removeAllViews()
@@ -50,5 +47,9 @@ class ShoeListFragment : Fragment() {
                 binding.shoeList.addView(textView)
             }
         })
+    }
+
+    fun fabClicked() {
+        findNavController().navigate(ShoeListFragmentDirections.actionFourthFragmentToFifthFragment())
     }
 }

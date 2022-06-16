@@ -5,6 +5,9 @@
 
     <data>
 
+        <variable
+            name="loginFragment"
+            type="com.example.jamesshoestore.ui.LoginFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -53,7 +56,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/button_first"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextTextPassword" />
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPassword"
+            android:onClick="@{() ->loginFragment.buttonClicked()}"/>
 
         <Button
             android:id="@+id/button_first"
@@ -64,6 +68,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/create_account_button"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            android:onClick="@{() ->loginFragment.buttonClicked()}"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

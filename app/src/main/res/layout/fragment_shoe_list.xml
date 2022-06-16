@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="shoeListFragment"
+            type="com.example.jamesshoestore.ui.ShoeListFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,7 +38,8 @@
             android:layout_marginBottom="24dp"
             android:src="@android:drawable/btn_star_big_on"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{() ->shoeListFragment.fabClicked()}"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
