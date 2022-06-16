@@ -1,4 +1,4 @@
-package com.example.jamesshoestore
+package com.example.jamesshoestore.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

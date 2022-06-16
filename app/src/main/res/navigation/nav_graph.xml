@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.jamesshoestore.FirstFragment"
+        android:name="com.example.jamesshoestore.ui.FirstFragment"
         android:label="Login"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.jamesshoestore.SecondFragment"
+        android:name="com.example.jamesshoestore.ui.SecondFragment"
         android:label="Welcome Onboarding"
         tools:layout="@layout/fragment_second">
         <action
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/ThirdFragment"
-        android:name="com.example.jamesshoestore.ThirdFragment"
+        android:name="com.example.jamesshoestore.ui.ThirdFragment"
         android:label="Instructions Onboarding"
         tools:layout="@layout/fragment_third">
         <action
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/FourthFragment"
-        android:name="com.example.jamesshoestore.ShoeListFragment"
+        android:name="com.example.jamesshoestore.ui.ShoeListFragment"
         android:label="Shoes List"
         tools:layout="@layout/fragment_shoe_list">
         <action
@@ -44,7 +44,7 @@
     </fragment>
     <fragment
         android:id="@+id/FifthFragment"
-        android:name="com.example.jamesshoestore.ShoeDetailFragment"
+        android:name="com.example.jamesshoestore.ui.ShoeDetailFragment"
         android:label="Shoe Details"
         tools:layout="@layout/fragment_shoe_detail">
         <action

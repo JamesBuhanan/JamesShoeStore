@@ -5,13 +5,13 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.jamesshoestore.ShoeDetailViewModel" />
+            type="com.example.jamesshoestore.viewmodel.ShoeDetailViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ShoeDetailFragment">
+        tools:context=".ui.ShoeDetailFragment">
 
         <EditText
             android:id="@+id/shoeName"

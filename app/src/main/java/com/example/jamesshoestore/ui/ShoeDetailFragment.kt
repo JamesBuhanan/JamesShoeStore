@@ -1,4 +1,4 @@
-package com.example.jamesshoestore
+package com.example.jamesshoestore.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,8 +9,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.example.jamesshoestore.R
 import com.example.jamesshoestore.databinding.FragmentShoeDetailBinding
 import com.example.jamesshoestore.model.Shoe
+import com.example.jamesshoestore.viewmodel.ShoeDetailViewModel
+import com.example.jamesshoestore.viewmodel.ShoeListViewModel
 
 class ShoeDetailFragment : Fragment() {
 

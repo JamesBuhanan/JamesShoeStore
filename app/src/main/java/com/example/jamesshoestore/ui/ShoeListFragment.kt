@@ -1,4 +1,4 @@
-package com.example.jamesshoestore
+package com.example.jamesshoestore.ui
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -11,13 +11,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
+import com.example.jamesshoestore.R
 import com.example.jamesshoestore.databinding.FragmentShoeListBinding
+import com.example.jamesshoestore.viewmodel.ShoeListViewModel
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ShoeListFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ShoeListFragment : Fragment() {
 
     lateinit var binding: FragmentShoeListBinding
