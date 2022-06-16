@@ -13,7 +13,7 @@ import com.example.jamesshoestore.databinding.FragmentSecondBinding
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class SecondFragment : Fragment() {
+class WelcomeFragment : Fragment() {
     private lateinit var binding: FragmentSecondBinding
 
     override fun onCreateView(
@@ -33,7 +33,7 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToThirdFragment())
+            findNavController().navigate(WelcomeFragmentDirections.actionSecondFragmentToThirdFragment())
         }
     }
 }

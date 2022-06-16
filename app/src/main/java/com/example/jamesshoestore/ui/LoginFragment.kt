@@ -13,7 +13,7 @@ import com.example.jamesshoestore.databinding.FragmentFirstBinding
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentFirstBinding
 
@@ -37,7 +37,7 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val onClickListener: (View) -> Unit = {
-            findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment())
+            findNavController().navigate(LoginFragmentDirections.actionFirstFragmentToSecondFragment())
         }
         binding.createAccountButton.setOnClickListener(onClickListener)
         binding.buttonFirst.setOnClickListener(onClickListener)

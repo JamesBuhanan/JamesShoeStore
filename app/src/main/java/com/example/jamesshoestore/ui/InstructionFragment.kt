@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.jamesshoestore.R
 import com.example.jamesshoestore.databinding.FragmentThirdBinding
 
-class ThirdFragment : Fragment() {
+class InstructionFragment : Fragment() {
 
     private lateinit var binding: FragmentThirdBinding
 
@@ -32,7 +32,7 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonThird.setOnClickListener {
-            findNavController().navigate(ThirdFragmentDirections.actionThirdFragmentToFourthFragment())
+            findNavController().navigate(InstructionFragmentDirections.actionThirdFragmentToFourthFragment())
         }
     }
 }

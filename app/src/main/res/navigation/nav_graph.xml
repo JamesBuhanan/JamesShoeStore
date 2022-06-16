@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.jamesshoestore.ui.FirstFragment"
+        android:name="com.example.jamesshoestore.ui.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.jamesshoestore.ui.SecondFragment"
+        android:name="com.example.jamesshoestore.ui.WelcomeFragment"
         android:label="Welcome Onboarding"
         tools:layout="@layout/fragment_second">
         <action
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/ThirdFragment"
-        android:name="com.example.jamesshoestore.ui.ThirdFragment"
+        android:name="com.example.jamesshoestore.ui.InstructionFragment"
         android:label="Instructions Onboarding"
         tools:layout="@layout/fragment_third">
         <action
