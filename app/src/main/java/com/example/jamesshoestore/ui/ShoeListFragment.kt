@@ -1,9 +1,7 @@
 package com.example.jamesshoestore.ui
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -31,7 +29,22 @@ class ShoeListFragment : Fragment() {
         )
         binding.shoeListFragment = this
 
+        setHasOptionsMenu(true)
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.menu_main, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        val thing = requireView().findNavController()
+//        val thing2 = NavigationUI.onNavDestinationSelected(item, thing)
+        when (item.itemId) {
+            R.id.some_id -> findNavController().navigate(ShoeListFragmentDirections.actionFourthFragmentToFirstFragment())
+        }
+        return true
     }
 
     //    @SuppressLint("FragmentLiveDataObserve")

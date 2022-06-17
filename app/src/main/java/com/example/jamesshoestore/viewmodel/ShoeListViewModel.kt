@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModel
 import com.example.jamesshoestore.model.Shoe
 
 class ShoeListViewModel : ViewModel() {
-    private val _shoes : MutableList<Shoe> = mutableListOf()
-    val shoes : LiveData<MutableList<Shoe>>
+    private val _shoes: MutableList<Shoe> = mutableListOf()
+    val shoes: LiveData<MutableList<Shoe>>
         get() = MutableLiveData(_shoes)
 
     fun addShoe(shoe: Shoe) {
@@ -16,7 +16,7 @@ class ShoeListViewModel : ViewModel() {
     }
 
     init {
-        Log.i("ShoeListViewModel","ShoeListViewModel created!")
+        Log.i("ShoeListViewModel", "ShoeListViewModel created!")
     }
 
     override fun onCleared() {
