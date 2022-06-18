@@ -9,6 +9,7 @@
             type="com.example.jamesshoestore.ui.InstructionFragment" />
     </data>
 
+    <!--Using constraint layout to stay consistent with other layouts-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"

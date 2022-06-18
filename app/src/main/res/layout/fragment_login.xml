@@ -10,6 +10,7 @@
             type="com.example.jamesshoestore.ui.LoginFragment" />
     </data>
 
+    <!--Using constraint layout so I don't have to use NESTED linear layouts-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,24 +52,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/abeezee_italic"
+            android:onClick="@{() ->loginFragment.buttonClicked()}"
             android:text="@string/create_account"
             app:layout_constraintBaseline_toBaselineOf="@+id/button_first"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/button_first"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextTextPassword"
-            android:onClick="@{() ->loginFragment.buttonClicked()}"/>
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPassword" />
 
         <Button
             android:id="@+id/button_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/abeezee_italic"
+            android:onClick="@{() ->loginFragment.buttonClicked()}"
             android:text="@string/login"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/create_account_button"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-            android:onClick="@{() ->loginFragment.buttonClicked()}"/>
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

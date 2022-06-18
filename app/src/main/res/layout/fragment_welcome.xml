@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="welcomeFragment"
             type="com.example.jamesshoestore.ui.WelcomeFragment" />
     </data>
 
+    <!--Using constraint layout to keep consistent with other layouts-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,12 +22,12 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="48dp"
             android:fontFamily="@font/abeezee_italic"
+            android:onClick="@{() -> welcomeFragment.buttonClicked()}"
             android:text="@string/next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            android:onClick="@{() ->welcomeFragment.buttonClicked()}"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/welcomeTextView"
