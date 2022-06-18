@@ -10,7 +10,7 @@
             type="com.example.jamesshoestore.ui.WelcomeFragment" />
     </data>
 
-    <!--Using constraint layout to keep consistent with other layouts-->
+    <!--Using constraint layout to keep consistent with other layouts -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
